@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <base href="https://htmlacademy-htmlcss.github.io/114289-sedona/master/">
 </head>
-  <body>
+<body>
     <header class="main-header">
         <nav class="menu">
             <div>
@@ -29,13 +29,13 @@
        <section class="back">
           <div class="text">
               <h2>welcome</h2>
-              <p class="top">to the gorgeus</p>
-              <h1>sedona</h1>
-              <p class="bottom">"Because the Grand Canyon     lucks!"</p>
+              <img class="top" src="http://placehold.it/150x100" alt="to the gorgeus"</img>
+              <img src="http://placehold.it/150x100" alt="sedona"></img>
+       <img class="bottom" src="http://placehold.it/150x100" alt="Because the Grand Canyon lucks!"></img>
           </div>
        </section>
        <section>
-           <b>Седона-небольшой городок в аризоне, заслуживающий большего!</b>
+           <h2>Седона-небольшой городок в аризоне, заслуживающий большего!</h2>
            <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
        </section>
        <section class="photo">
@@ -43,7 +43,9 @@
               <b class="photo-text">настоящий городок</b>
               <p class="number">№1</p>
               <p class="photo-text"> седона - не аттракцион для туристов, там течет своя жизнь</p>
-              <img src="http://placehold.it/150x100">
+           </div>
+           <div class="photo-photos">
+             <img src="http://placehold.it/33.33x33.33">
            </div>
        </section>
        <sections class="icons">
@@ -61,8 +63,10 @@
            </div>       
        </sections>
        <section class="photo">
+           <div class="photo-photos">
+             <img src="http://placehold.it/150x100">
+           </div>
            <div>
-              <img src="http://placehold.it/150x100">
               <b class="photo-text">Там есть мост дьявола</b>
               <p class="number">№2</p>
               <p class="photo-text"> да, по нему можно пройти! если конечно вы осмелитесь</p> 
@@ -88,37 +92,35 @@
        <section>
            <b>заинтересовались?</b>
            <p>укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+           <div class="search">
+             <a href="#">поиск гостиницы в седоне</a>
+           </div>
+           <form>
+             <label for="data" name="checkin" required>Дата заезда <input type="text" id="checkin" required></label>
+              <label for="data" name="checkin" required>Дата выезда <input type="text" id="checkin" required></label>
+           <div class="buttons">
+               <button>найти</button>
+           </div>
+           </form>
        </section>
        <section>
            <div clas="map">
            </div>
        </section>
-       <form>
-           <div class="search">
-               поиск гостиницы в седоне
-           </div>
-              <label for="data" name="checkin" required>Дата заезда <input type="text" id="checkin" required></label>
-              <label for="data" name="checkin" required>Дата выезда <input type="text" id="checkin" required></label>
-           <div class="buttons">
-               <button>найти</button>
-           </div>
-       </form>
    </main>
   <footer class="main-footer">
-       <div class="container">
-          <section class="footer-contacts">
+    <section class="footer-contacts">
               #visitsedona
-          </section>
-          <section class="footer-social">
-             <a class="social-btn social-btn-tv" href="#"></a>
-             <a class="social-btn social-btn-fb" href="#"></a>
-             <a class="social-btn social-btn-yt" href="#"></a>
-          </section>
-          <section class="footer-copyright">
-             <p>website by</p>
-             <img src="http://placehold.it/150x100">
-          </section>
-       </div>
+    </section>
+    <section class="footer-social">
+       <a class="social-btn social-btn-tv" href="#"></a>
+       <a class="social-btn social-btn-fb" href="#"></a>
+       <a class="social-btn social-btn-yt" href="#"></a>
+    </section>
+    <section class="footer-copyright">
+       <p>website by</p>
+       <img src="http://placehold.it/150x100">
+    </section>
   </footer>
- </body>
+</body>
 </html>
