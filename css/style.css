@@ -1,0 +1,21 @@
+body {
+    font-size:21px;
+    line-height:26px;
+    color:#000;
+    font-weight:bold;
+    font-family:"PTSans Bold", sans-serif, monospace;
+}
+h1 {
+    font-family:"Myriad Pro Regular";
+    line-height:26px;
+    color:#81b3d2;
+    font-size:14px;
+    text-transform:uppercase;
+}
+h2 {
+    font-family:"PTSans Bold";
+    line-height:26px;
+    color:#000;
+    font-size:21px;
+    font-feight:bold;
+}
