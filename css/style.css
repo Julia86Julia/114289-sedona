@@ -9,11 +9,11 @@ html {
 }
 body {
     margin:0;
-    padding:0 40px;
+   
     display:flex;
     flex-direction: column;
     flex:auto;
-    font-family:"PTSans Bold", sans-serif;  
+    font-family:"PTSans", sans-serif;  
     font-size:21px;
     line-height:26px;
     color:#000;
@@ -21,55 +21,53 @@ body {
     border:1px solid #000;
 }
 .main-header {
+    width: 100%;
     max-width: 1200px;
     min-width: 768px;
-    margin:0;
-    padding: 22px 0 24px 0;
+    margin:auto;
+
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+
     box-sizing: border-box;
     background: #fff;
     border:1px solid #000;
 }
 .menu {
      display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items:center;
     flex-wrap: wrap;
+    
    width: 1056px;
     height: 56px;
      background: #fff;
     border:1px solid #f01828;
-    margin: 0 73px 0 73px;
+   
     
 }
-div .menu  {
+ .menu div {
     font-size: 14px;
-    
+  
     text-decoration: none;
 /*    margin: 5px 0 0 5px;*/
     display: flex;
     justify-content: center;
     align-items:center;
-    flex-shrink: 1;
+   
+}
+.menu a {
+    width: 100px;
 }
 a {
     text-decoration: none;
     color: #000;
 }
-
-/*/
-
-    .logo {
-	font-size: 0;
-	margin: -10px 10px 10px 0;
-	display: flex;
-	flex: none;
-	align-items: center;
+.logo {
+    align-items: flex-start;
+    align-self: center;
 }
 
-*/
 main {
     width: 100%;
     max-width: 1200px;
@@ -104,25 +102,35 @@ h2 {
 }
 .photo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     width:100%;
-    height: 256px;
+    min-height: 256px;
     box-sizing: content-box;
     border: 1px solid #000;
 }
-.photo-content {
-    width: 400px;
-/*    flex-shrink:1;*/
-    height: 256px;
+.photo-content-left {
+    width: 43.3%;
+
+    min-height: 256px;
+  
     background-color: #81b3d2;
-    border: 1px solid #000;
+    border-right: 1px solid #000;
+    
 }
+.photo-photos {
+    width:66.6%;
+    height: 256px;
+   
+    background: src("C:/Users/User/Documents/GitHub/114289-sedona/img/nomber.jpg") no-repeat;
+     border: 1px solid #000;
+}
+
 .icons {
     display: flex;
 }
 .icons-item {
-    width: 400px;
+    width: 33.3%;
     height: 332px;
     border-right:1px solid aqua;
 }
@@ -143,6 +151,7 @@ h2 {
     border: 1px solid #000;
     flex-wrap: wrap;
     align-content: center;
+     display: none;
 }
 .map {
     background: url("C:/Users/User/Documents/GitHub/114289-sedona/img/map.jpg") no-repeat;
@@ -192,6 +201,7 @@ form {
     
     background-color: aquamarine;
     height: 217px;
+   
 }
 .check {
     width: 313px;
