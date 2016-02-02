@@ -1,16 +1,97 @@
+html {
+    background:#f2f2f2;
+    min-height:100%;
+     
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+
+}
 body {
+    margin:0;
+   
+    display:flex;
+    flex-direction: column;
+    flex:auto;
+    font-family:"PTSans", sans-serif;  
     font-size:21px;
     line-height:26px;
     color:#000;
-    font-weight:bold;
-    font-family:"PTSans Bold", sans-serif, monospace;
+    font-weight:bold; 
+    border:1px solid #000;
 }
-h1 {
-    font-family:"Myriad Pro Regular";
-    line-height:26px;
-    color:#81b3d2;
-    font-size:14px;
-    text-transform:uppercase;
+.main-header {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 768px;
+    margin:auto;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    box-sizing: border-box;
+    background: #fff;
+    border:1px solid #000;
+}
+.menu {
+     display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap: wrap;
+    
+   width: 1056px;
+    height: 56px;
+     background: #fff;
+    border:1px solid #f01828;
+   
+    
+}
+ .menu div {
+    font-size: 14px;
+  
+    text-decoration: none;
+/*    margin: 5px 0 0 5px;*/
+    display: flex;
+    justify-content: center;
+    align-items:center;
+   
+}
+.menu a {
+    width: 100px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.logo {
+    align-items: flex-start;
+    align-self: center;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 768px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    box-sizing: border-box;
+    justify-content: center;
+    border:1px solid #000;
+}
+.back {
+    background: url("C:/Users/User/Documents/GitHub/114289-sedona/img/back.jpg") no-repeat;
+    width:100%;
+    height:509px;
+    border: 1px solid #000;
+}
+.content {
+    width:100%;
+    height: 217px;
+    border: 1px solid #000;
 }
 h2 {
     font-family:"PTSans Bold";
@@ -19,3 +100,147 @@ h2 {
     font-size:21px;
     font-feight:bold;
 }
+.photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    min-height: 256px;
+    box-sizing: content-box;
+    border: 1px solid #000;
+}
+.photo-content-left {
+    width: 33.3%;
+    background-color: #81b3d2;
+
+
+}
+.photo-photos-left {
+    width:66.6%;
+    height: 256px;
+    background: url('C:/Users/User/Documents/GitHub/114289-sedona/img/nomber.jpg') no-repeat;
+     
+}
+.photo-content-right {
+    width: 33.3%;
+     background-color: #81b3d2;
+}
+.photo-photos-right {
+    background: url("C:/Users/User/Documents/GitHub/114289-sedona/img/number.jpg") no-repeat;
+    width: 66.6%;
+    height: 256px;
+}
+.icons {
+    display: flex;
+}
+.icons-item {
+    width: 33.3%;
+    height: 332px;
+    border-right:1px solid aqua;
+}
+.description {
+    display: flex;
+     border-bottom: 1px solid #000;
+}
+.description-text {
+    width: 400px;
+    height: 260px;
+     border-right:1px solid aqua;
+  
+}
+.search {
+    width: 576px;
+    height: 480px;
+    display: flex;
+    border: 1px solid #000;
+    flex-wrap: wrap;
+    align-content: center;
+     display: none;
+}
+.map {
+    background: url("C:/Users/User/Documents/GitHub/114289-sedona/img/map.jpg") no-repeat;
+    width: 100%;
+    height: 475px;
+}
+.main-footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background: #f9fbf6;
+    width: 100%;
+    height: 120px;
+    max-width: 1200px;
+    min-width: 768px;
+    margin:auto;
+    box-sizing: border-box;
+    border:1px solid #000;
+}
+.footer-contacts {
+    width: 400px;
+    border: 1px solid #000;
+}
+.footer-social {
+    width: 488px;
+    border: 1px solid #000;
+}
+.footer-copyright {
+    width: 313px;
+    border: 1px solid #000;
+}
+
+
+h1 {
+    font-family:"Myriad Pro Regular";
+    line-height:26px;
+    color:#000;
+    font-size:14px;
+    text-transform:uppercase;
+}
+form {
+    max-width: 1200px;
+    min-width: 760px;
+    height: 217px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    background: url('C:/Users/User/Documents/GitHub/114289-sedona/img/filter.jpg') no-repeat;
+  
+   
+}
+.check {
+    width: 313px;
+    height: 217px;
+    border: 1px solid #000;
+}
+.type {
+    width: 488px;
+    height: 217px;
+    border: 1px solid #000;
+}
+.cost {
+    width: 400px;
+    height: 217px;
+     border: 1px solid #000;
+}
+.found {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+     border: 1px solid #000;
+}
+
+.amara {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    height: 153px;
+    width: 1200px;
+   
+     border: 1px solid #000;
+    
+}
+
+
+    
