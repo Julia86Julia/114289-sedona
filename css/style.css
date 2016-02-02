@@ -112,20 +112,21 @@ h2 {
 .photo-content-left {
     width: 33.3%;
     background-color: #81b3d2;
-    border-right: 1px solid #000; 
+
+
 }
 .photo-photos-left {
     width:66.6%;
     height: 256px;
-   
-    background: src("C:/Users/User/Documents/GitHub/114289-sedona/img/nomber.jpg") no-repeat;
+    background: url('C:/Users/User/Documents/GitHub/114289-sedona/img/nomber.jpg') no-repeat;
      
 }
 .photo-content-right {
-    width: 33.3%
+    width: 33.3%;
+     background-color: #81b3d2;
 }
 .photo-photos-right {
-    background: src("C:/Users/User/Documents/GitHub/114289-sedona/img/number.jpg") no-repeat;
+    background: url("C:/Users/User/Documents/GitHub/114289-sedona/img/number.jpg") no-repeat;
     width: 66.6%;
     height: 256px;
 }
@@ -198,12 +199,13 @@ h1 {
 form {
     max-width: 1200px;
     min-width: 760px;
+    height: 217px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     
-    background-color: aquamarine;
-    height: 217px;
+    background: url('C:/Users/User/Documents/GitHub/114289-sedona/img/filter.jpg') no-repeat;
+  
    
 }
 .check {
@@ -235,7 +237,12 @@ form {
     flex-shrink: 1;
     height: 153px;
     width: 1200px;
+   
      border: 1px solid #000;
     
 }
+/*.amara img {*/
+/*     background: url('C:/Users/User/Documents/GitHub/114289-sedona/img/amara.jpg') no-repeat;*/
+/*}*/
+
     
