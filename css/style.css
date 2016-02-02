@@ -110,22 +110,25 @@ h2 {
     border: 1px solid #000;
 }
 .photo-content-left {
-    width: 43.3%;
-
-    min-height: 256px;
-  
+    width: 33.3%;
     background-color: #81b3d2;
-    border-right: 1px solid #000;
-    
+    border-right: 1px solid #000; 
 }
-.photo-photos {
+.photo-photos-left {
     width:66.6%;
     height: 256px;
    
     background: src("C:/Users/User/Documents/GitHub/114289-sedona/img/nomber.jpg") no-repeat;
-     border: 1px solid #000;
+     
 }
-
+.photo-content-right {
+    width: 33.3%
+}
+.photo-photos-right {
+    background: src("C:/Users/User/Documents/GitHub/114289-sedona/img/number.jpg") no-repeat;
+    width: 66.6%;
+    height: 256px;
+}
 .icons {
     display: flex;
 }
