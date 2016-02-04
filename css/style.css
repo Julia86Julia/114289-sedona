@@ -8,11 +8,6 @@ html {
 
 }
 body {
-    margin:0;
-   
-    display:flex;
-    flex-direction: column;
-    flex:auto;
     font-family:"PTSans", sans-serif;  
     font-size:21px;
     line-height:26px;
@@ -20,10 +15,18 @@ body {
     font-weight:bold; 
     border:1px solid #000;
 }
+.block {
+    margin:0;
+ display:flex;
+    flex-direction: column;
+    flex:auto;
+     max-width: 1200px;
+    min-width: 768px;
+}
+    
 .main-header {
     width: 100%;
-    max-width: 1200px;
-    min-width: 768px;
+   
     margin:auto;
 
     display: flex;
@@ -48,9 +51,7 @@ body {
 }
  .menu div {
     font-size: 14px;
-  
     text-decoration: none;
-/*    margin: 5px 0 0 5px;*/
     display: flex;
     justify-content: center;
     align-items:center;
@@ -67,7 +68,9 @@ a {
     align-items: flex-start;
     align-self: center;
 }
-
+.logo img {
+    background: url("img/index/logo.png");
+}
 main {
     width: 100%;
     max-width: 1200px;
@@ -83,7 +86,7 @@ main {
     border:1px solid #000;
 }
 .back {
-    background: url("C:/Users/User/Documents/GitHub/114289-sedona/img/back.jpg") no-repeat;
+    background: url("img/back.jpg") no-repeat;
     width:100%;
     height:509px;
     border: 1px solid #000;
@@ -98,7 +101,7 @@ h2 {
     line-height:26px;
     color:#000;
     font-size:21px;
-    font-feight:bold;
+    font-weight:bold;
 }
 .photo {
     display: flex;
@@ -118,7 +121,7 @@ h2 {
 .photo-photos-left {
     width:66.6%;
     height: 256px;
-    background: url('C:/Users/User/Documents/GitHub/114289-sedona/img/nomber.jpg') no-repeat;
+    background: url('img/nomber.jpg') no-repeat;
      
 }
 .photo-content-right {
@@ -126,7 +129,7 @@ h2 {
      background-color: #81b3d2;
 }
 .photo-photos-right {
-    background: url("C:/Users/User/Documents/GitHub/114289-sedona/img/number.jpg") no-repeat;
+    background: url("img/number.jpg") no-repeat;
     width: 66.6%;
     height: 256px;
 }
@@ -158,7 +161,7 @@ h2 {
      display: none;
 }
 .map {
-    background: url("C:/Users/User/Documents/GitHub/114289-sedona/img/map.jpg") no-repeat;
+    background: url("../img/index/map.jpg") no-repeat;
     width: 100%;
     height: 475px;
 }
@@ -204,7 +207,7 @@ form {
     flex-direction: row;
     justify-content: space-between;
     
-    background: url('C:/Users/User/Documents/GitHub/114289-sedona/img/filter.jpg') no-repeat;
+    background: url('img/filter.jpg') no-repeat;
   
    
 }
@@ -238,8 +241,7 @@ form {
     height: 153px;
     width: 1200px;
    
-     border: 1px solid #000;
-    
+     border: 1px solid #000; 
 }
 
 
