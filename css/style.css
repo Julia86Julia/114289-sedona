@@ -1,29 +1,31 @@
 html {
     background:#f2f2f2;
     min-height:100%;
-     
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
-
 }
 body {
+    font-family:"PTSans", "Arial", sans-serif;  
+    font-size:21px;
+    line-height:26px;
+   background: #fff;
+    color: #000;
+    font-weight:bold; 
+    text-transform: uppercase;
+}
+.block {
     margin:0;
-   
     display:flex;
     flex-direction: column;
     flex:auto;
-    font-family:"PTSans", sans-serif;  
-    font-size:21px;
-    line-height:26px;
-    color:#000;
-    font-weight:bold; 
-    border:1px solid #000;
-}
-.main-header {
-    width: 100%;
     max-width: 1200px;
     min-width: 768px;
+}
+    
+.main-header {
+    width: 100%;
+   
     margin:auto;
 
     display: flex;
@@ -31,7 +33,7 @@ body {
 
     box-sizing: border-box;
     background: #fff;
-    border:1px solid #000;
+   color: #000;
 }
 .menu {
      display: flex;
@@ -42,32 +44,37 @@ body {
    width: 1056px;
     height: 56px;
      background: #fff;
-    border:1px solid #f01828;
+    
    
     
 }
  .menu div {
     font-size: 14px;
-  
     text-decoration: none;
-/*    margin: 5px 0 0 5px;*/
     display: flex;
+     flex-direction: row;
     justify-content: center;
     align-items:center;
    
 }
 .menu a {
-    width: 100px;
+    width: 150px; 
 }
 a {
     text-decoration: none;
     color: #000;
+    font-size: 14px;
+    line-height: 26px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .logo {
     align-items: flex-start;
     align-self: center;
 }
-
+.logo img {
+    background: url("img/index/logo.png");
+}
 main {
     width: 100%;
     max-width: 1200px;
@@ -80,54 +87,115 @@ main {
     flex-shrink: 1;
     box-sizing: border-box;
     justify-content: center;
-    border:1px solid #000;
 }
 .back {
-    background: url("C:/Users/User/Documents/GitHub/114289-sedona/img/back.jpg") no-repeat;
+    background: url("../img/back.jpg") no-repeat;
     width:100%;
     height:509px;
-    border: 1px solid #000;
 }
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.text img {
+    margin-left: auto;
+    margin-right: auto;
+}
+.welcome {
+    margin-top: 78px;
+}
+.top {
+    margin-top: 11px;
+}
+.sedona {
+    margin-top: 50px;
+}
+.bottom {
+    margin-top: 53px;
+}
+
+/*.top::after {*/
+/*    content: "";*/
+/*    display: block;*/
+/*    border-bottom: 2px solid #766357;*/
+/*    position: relative;*/
+/*    width: 29px;*/
+/*    top:-10px;*/
+/* left:-40px;*/
+/*}*/
+    
 .content {
     width:100%;
     height: 217px;
-    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    
+    
 }
 h2 {
-    font-family:"PTSans Bold";
-    line-height:26px;
     color:#000;
     font-size:21px;
-    font-feight:bold;
+    font-weight:bold;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+p {
+    font-size: 14px;
+    color: #858585;
+    margin-left: auto;
+    margin-right: auto;
 }
 .photo {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width:100%;
-    min-height: 256px;
+    height: 256px;
     box-sizing: content-box;
-    border: 1px solid #000;
+    flex-grow: 1;
+  
+    
 }
 .photo-content-left {
-    width: 33.3%;
+    width: 33.34%;
     background-color: #81b3d2;
-
+    display: flex;
+    flex-direction: column;
 
 }
 .photo-photos-left {
-    width:66.6%;
+    width:66.66%;
     height: 256px;
-    background: url('C:/Users/User/Documents/GitHub/114289-sedona/img/nomber.jpg') no-repeat;
-     
+/*    background: url('img/index/nomber.jpg') no-repeat;*/
+    display: flex;
+    flex-direction: column;
+    
+}
+.photo-text {
+      color: #fff;
+    margin-top: 55px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+.number {
+    color: #fff;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.photo-text {
+    margin-top: 20px;
 }
 .photo-content-right {
-    width: 33.3%;
+    width: 33.34%;
      background-color: #81b3d2;
 }
 .photo-photos-right {
-    background: url("C:/Users/User/Documents/GitHub/114289-sedona/img/number.jpg") no-repeat;
-    width: 66.6%;
+    width: 66.66%;
     height: 256px;
 }
 .icons {
@@ -136,16 +204,16 @@ h2 {
 .icons-item {
     width: 33.3%;
     height: 332px;
-    border-right:1px solid aqua;
+   
 }
 .description {
     display: flex;
-     border-bottom: 1px solid #000;
+    
 }
 .description-text {
     width: 400px;
     height: 260px;
-     border-right:1px solid aqua;
+     
   
 }
 .search {
@@ -158,7 +226,7 @@ h2 {
      display: none;
 }
 .map {
-    background: url("C:/Users/User/Documents/GitHub/114289-sedona/img/map.jpg") no-repeat;
+    background: url("../img/index/map.jpg") no-repeat;
     width: 100%;
     height: 475px;
 }
@@ -204,31 +272,31 @@ form {
     flex-direction: row;
     justify-content: space-between;
     
-    background: url('C:/Users/User/Documents/GitHub/114289-sedona/img/filter.jpg') no-repeat;
+    background: url('img/filter.jpg') no-repeat;
   
    
 }
 .check {
     width: 313px;
     height: 217px;
-    border: 1px solid #000;
+   
 }
 .type {
     width: 488px;
     height: 217px;
-    border: 1px solid #000;
+   
 }
 .cost {
     width: 400px;
     height: 217px;
-     border: 1px solid #000;
+     
 }
 .found {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     
-     border: 1px solid #000;
+   
 }
 
 .amara {
@@ -238,8 +306,7 @@ form {
     height: 153px;
     width: 1200px;
    
-     border: 1px solid #000;
-    
+     
 }
 
 

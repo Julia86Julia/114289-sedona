@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
-    <base href="https://htmlacademy-htmlcss.github.io/114289-sedona/master/">
+   
 </head>
 <body>
+<div class="block">
     <header class="main-header">
         <nav class="menu">
             <div>
@@ -17,9 +20,8 @@
             </div>
 
             <div class="logo">
-              <img src="C:/Users/User/Documents/GitHub/114289-sedona/img/logo.png" width="138" height="71">
+              <img src="img/logo.png" width="138" height="71" alt="logo">
             </div>
-
             <div>
               <a href="#">карта штата</a>
             </div>
@@ -31,43 +33,48 @@
    <main>
        <section class="back">
           <div class="text">
-              <img class="welcome" src="C:/Users/User/Documents/GitHub/114289-sedona/img/Welcome.png" alt="WELCOME"></img>
-              <img class="top" src="C:/Users/User/Documents/GitHub/114289-sedona/img/gorgeous.png" alt="to the gorgeus"</img>
-              <img src="C:/Users/User/Documents/GitHub/114289-sedona/img/Sedona.png" alt="sedona"></img>
-       <img class="bottom" src="C:/Users/User/Documents/GitHub/114289-sedona/img/Because.png" alt="Because the Grand Canyon lucks!"></img>
+            <img class="welcome" src="img/Welcome.png" width="194" height="48" alt="WELCOME">
+            <img class="top" src="img/index/gorgeous.png" width="176" height="31" alt="to the gorgeous">
+            <img class="sedona" src="img/Sedona.png" width="460" height="83" alt="sedona">
+            <img class="bottom" src="img/index/Because.png" width="298" height="84" alt="Because the Grand Canyon lucks!">
+            
           </div>
        </section>
        <section class="content">
-           <h2>Седона-небольшой городок в аризоне, заслуживающий большего!</h2>
+          
+           <h2>Седона-небольшой городок в аризоне, <br>заслуживающий большего!</h2>
            <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
        </section>
        <section class="photo">
            <div class="photo-content-left">
-              <b class="photo-text">настоящий городок</b>
+              <b class="photo-text">настоящий<br> городок</b>
               <p class="number">№1</p>
               <p class="photo-text"> седона - не аттракцион для туристов, там течет своя жизнь</p>
            </div>
            <div class="photo-photos-left">
-              <img src="C:/Users/User/Documents/GitHub/114289-sedona/img/nomber.jpg">
+              <img src="img/index/nomber.jpg" alt="hotel">
            </div>
        </section>
-       <sections class="icons">
+       <section class="icons">
            <div class="icons-item">
+               <img src="img/1icons.jpg">
               <b>жилье</b>
               <p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
            </div>
            <div class="icons-item">
+               <img src="img/2icons.jpg">
                <b>еда</b>
                <p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
            </div>       
            <div class="icons-item">
+               <img src="img/3icons.png">
                <b>сувениры</b>
                <p>не только китайского, но и местного производства!</p>
            </div>       
-       </sections>
+       </section> 
        <section class="photo">
            <div class="photo-photos-right">
-              <img src="C:/Users/User/Documents/GitHub/114289-sedona/img/number.jpg">
+              <img src="img/index/number.jpg" alt="hotel">
            </div>
            <div class="photo-content-right">
               <b class="photo-text">Там есть мост дьявола</b>
@@ -75,23 +82,26 @@
               <p class="photo-text"> да, по нему можно пройти! если конечно вы осмелитесь</p> 
            </div>
        </section>
-       <sections class="description">
+       <section class="description">
            <div class="description-text">
+               <img src="img/1icons.jpg">
               <b>небольшая площадь</b>
               <p class="numbers">№3</p>
               <p>все достопримечательности находятся очень близко</p>
            </div>
            <div class="description-text">
+               <img src="img/2icons.jpg">
                <b>красивая дорога</b>
                <p class="numbers">№4</p>
                <p>ехать в седону из лас-вегаса совсем не скучно!</p>
            </div>       
            <div class="description-text">
+               <img src="img/3icons.png">
                <b>мало туристов</b>
                <p class="numbers">№5</p>
                <p>большинство едет в гранд каньон и толпится там</p>
            </div>       
-       </sections>
+       </section>
        <section class="search">
            <b>заинтересовались?</b>
            <p>укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
@@ -99,10 +109,10 @@
              <a href="#">поиск гостиницы в седоне</a>
            </div>
            <form>
-             <label for="data" name="checkin" required>Дата заезда <input type="text" id="checkin" required></label>
-              <label for="data" name="checkin" required>Дата выезда <input type="text" id="checkin" required></label>
+             <label for="data" name="checkin">Дата              заезда <input type="text" id="data"></label>
+             <label for="datas" name="checkin">Дата выезда <input type="text" id="datas" required></label>
            <div class="buttons">
-               <button>найти</button>
+             <button>найти</button>
            </div>
            </form>
        </section>
@@ -122,8 +132,9 @@
     </section>
     <section class="footer-copyright">
        <p>website by</p>
-       <img src="http://placehold.it/115x37">
+       <img src="img/html.png" alt="image">
     </section>
   </footer>
+</div>
 </body>
 </html>
