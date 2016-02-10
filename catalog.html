@@ -28,7 +28,7 @@
         </nav>
     </header>
     <main>
-      <form>
+      <form class="filter">
         <div class="check">
           <p>инфраструктура:</p>
           <input type="checkbox" name="infra">
@@ -54,10 +54,10 @@
           <button>показать</button>
         </div>
       </form>
-      <div class="found">
-        <p class="found-founds">
+      <section class="found">
+        <h2 class="found-founds">
           Найдено:3
-        </p>
+        </h2>
         <p class="found-sorting"> 
           сортировка:
         </p>
@@ -66,27 +66,35 @@
         <a href="#">по рейтингу</a>
         <a class="found arrow-up" href="#">по возрастанию</a>
         <a class="found arrow-down" href="#">по убыванию</a>
-      </div>
-      <section class="hotels">
+      </section>
+      <section class="hotels">  
         <div class="amara">
-          <img src="img/amara.jpg">
-          <b>amara resort & spa</b>
-          <p>гостиница</p>
-          <p>от 3500 р.</p>
+        <div>
+          <img src="img/amara.jpg" width="135" height="90">
+          </div>
+          <div class="resort">  
+          <h2>amara resort & spa</h2>
+          <p>гостиница от 3500 р.</p>
+          
           <a class="details">подробнее</a>
           <a class="reserve">забронировать</a>
-        </div> 
+          </div> 
+            <div class="right">
+             <p class="star"></p>
+             <p class="rating">рейтинг:8,5</p>
+            </div>
+          </div>   
         <div class="amara">
-          <img src="img/desert.jpg">
-          <b>desert quail inn</b>
+          <img src="img/desert.jpg" width="135" height="90">
+          <h2>desert quail inn</h2>
           <p>мотель</p>
           <p>от 2000 р.</p>
           <a class="details">подробнее</a>
           <a class="reserve">забронировать</a>  
         </div> 
         <div class="amara">
-          <img src="img/villas.jpg">
-          <b>villas at poco diablo</b>
+          <img src="img/villas.jpg" width="135" height="90">
+          <h2>villas at poco diablo</h2>
           <p>апартаменты</p>
           <p>от 4000 р.</p>
           <a class="details">подробнее</a>
