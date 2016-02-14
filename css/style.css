@@ -77,7 +77,7 @@ a:hover {
 }
 .logo img {
     background: url("img/index/logo.png");
-    z-index: 99;
+    z-index: 98;
 }
 main {
     width: 100%;
@@ -109,6 +109,17 @@ main {
 .back .top {
     margin-top: 10px;
 }
+.back .top::after {
+    content::"";
+    display: block;
+    border-bottom: 2px solid #766357;
+    position: absolute;
+    top: -30px;
+   
+    width: 256px;
+    z-index: 99;
+}
+
 .shape {
   
   width: 100%;
@@ -173,6 +184,26 @@ p {
     color: #fff;
     text-align: center;
 }
+.nomber::after {
+    content: '';
+    position: relative;
+    display: block;
+    border-bottom: 2px solid #fff;
+    width: 9px;
+    top: -14px;
+    left: -15px;
+}
+.nomber::before {
+    content: '';
+    position: relative;
+    display: block;
+    border-bottom: 2px solid #fff;
+    width: 9px;
+    top: 14px;
+    right: -30px;
+}
+
+
 .photo-text-p {
     margin-top: 30px;
     color: #fff;
@@ -220,6 +251,7 @@ p {
 }
 .description {
     display: flex;
+    justify-content: center;
     background-color: #eee;
 }
 .description-text {
@@ -232,9 +264,32 @@ p {
     align-items: center;
   
 }
+.description-text b {
+    text-align: center;
+}
 .description-text p {
     text-align: center;
 }
+.numbers::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #979797;
+    position: relative;
+     width: 9px;
+    top: -14px;
+    left: -15px;
+}
+.numbers::before {
+    content: '';
+    position: relative;
+    display: block;
+    border-bottom: 2px solid #979797;
+    width: 9px;
+    top: 14px;
+    right: -30px;
+}
+
+
 .interest {
     width: 100%;
     height: 290px;
@@ -256,22 +311,17 @@ p {
     text-align: center;
     color: #333;
 }
-.interest-hotel {
-    width: 47.33%;
-    height: 86px;
-    background: #766357;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: -5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.interest-hotel a {
+
+.interest .interest-search {
+    display: block;
     color: #fff;
     font-size: 21px;
-    font-weight: 800;
-    
+    text-decoration: none;
+    background-color: #766357;
+    width: 568px;
+    height: 86px;
+    text-align: center;
+    padding-top: 35px;
 }
 .map {
     background: url("../img/index/map.jpg") no-repeat;
@@ -292,7 +342,18 @@ p {
     margin:auto;
     box-sizing: border-box;
 }
-
+.footer-contacts p {
+    color: #000;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+}
+.footer-copyright p {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px; 
+}
 .sprite {
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
@@ -325,21 +386,68 @@ h1 {
     text-transform:uppercase;
 }
 .search {
-    width: 48%;
-   
+    width: 568px;
     height: 419px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 /* display: none;*/
     background: #fff;
     position: absolute;
-/*    left: 312px;*/
-    border: 1px solid #000;
+    left: calc(50% - 284px);
   }
 .search-block {
-  
-   
+  display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 465px;
+    height: 287px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.search label,
+.select label {
+    font-size: 14px;
+    line-height: 26px;
+    font-family: "PTSans", "Arial", sans-serif;
+    color: #000;
+    text-transform: uppercase;
+}
+.search input[type="text"] {
+    width: 345px;
+    height: 40px;
+}
+.select {
+    display: flex;
+    justify-content: center;
+}
+.select input[type="text"] {
+    width: 38px;
+    height: 36px;
+    background-color: #f2f2f2;
+    border: none;
+}
+.select a {
+    display: block;
+    color: #a9a9a9;
+    background: #f2f2f2;
+    width: 38px;
+    height: 29px;
+    font-family: "icomoon";
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    padding-top: 9px;
+}
+.search .btn {
+    width: 465px;
+    height: 60px;
+    color: #fff;
+    background: #81b3d2;
+    border: none;
+    font-size: 21px;
+    line-height: 26px;
 }
 .filter {
     display: flex;
@@ -401,19 +509,22 @@ h1 {
     margin-left: 30px;
 }
 .resort {
-  display: flex;
+  display: inline-flex;
     flex-direction: column;
     justify-content: space-around;
-    align-content: flex-start;
+   align-content: space-around;
     flex-wrap: nowrap;
-    margin-left: 30px;
-    width: 369px;
-    max-height: 96px;
+    flex-basis: 360px;
+    margin: 30px;
+    max-height: 90px;
+    max-width: 360px;
+}
+
 }
 .right {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: flex-end;
+    align-content: flex-start;
 }
     
