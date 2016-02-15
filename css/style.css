@@ -14,6 +14,46 @@ body {
     font-weight:bold; 
     text-transform: uppercase;
 }
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-sedona";
+  src: url("../fonts/symbols-sedona.woff") format("woff"),
+       url("../fonts/symbols-sedona.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-sedona";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
+}
+
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-star::before { content: "\2605"; } /* "★" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-calendar::before { content: "\e800"; } /* "" */
+.icon-plus::before { content: "\e801"; } /* "" */
+.icon-minus::before { content: "\e802"; } /* "" */
+.icon-youtube::before { content: "\f39e"; } /* "" */
+
 .block {
     margin: auto;
     display:flex;
@@ -298,6 +338,7 @@ p {
    justify-content: space-around;
     align-items: stretch; 
 }
+
 .interest h2 {
     font-size: 30px;
     color: #000;
@@ -342,11 +383,32 @@ p {
     margin:auto;
     box-sizing: border-box;
 }
+.footer-contacts {
+    width: 20%;
+}
 .footer-contacts p {
     color: #000;
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
+}
+.footer-social {
+    width: 20%;
+}
+.social-btn  {
+    display: inline-flex;
+    color: #fff;
+    background: #81b3d2 url("../img/sprite/icons.png");
+    width: 46px;
+    height: 48px;
+    text-align: center;
+}
+
+.footer-copyright {
+ width: 20%; 
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .footer-copyright p {
     color: #000;
@@ -355,28 +417,35 @@ p {
     line-height: 26px; 
 }
 .sprite {
-    background-image: url("../img/sprite.png");
+    background-image: url(spritesheet.png);
     background-repeat: no-repeat;
     display: block;
+}
+
+.sprite-calendar {
+    width: 21px;
+    height: 22px;
+    background-position: -8px -8px;
 }
 
 .sprite-fb-icons {
     width: 46px;
     height: 48px;
-    background-position: -5px -5px;
+    background-position: -45px -8px;
 }
 
 .sprite-t-icons {
     width: 46px;
     height: 48px;
-    background-position: -5px -63px;
+    background-position: -107px -8px;
 }
 
 .sprite-you-icons {
     width: 46px;
     height: 48px;
-    background-position: -5px -121px;
+    background-position: -8px -72px;
 }
+
 
 h1 {
     font-family:"Myriad Pro";
@@ -396,6 +465,9 @@ h1 {
     position: absolute;
     left: calc(50% - 284px);
   }
+.search-show {
+    display: block;
+}
 .search-block {
   display: flex;
     flex-direction: column;
@@ -406,6 +478,17 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 }
+.sprite-calendar {
+    background-image: url("../img/sprite/icons.png");
+    background-repeat: no-repeat;
+/*    background-color: #c2c2c2;*/
+    width: 21px;
+    height: 22px;
+    background-position: 310px 0px;
+}
+.sprite-calendar:hover {
+    color: #000;
+}
 .search label,
 .select label {
     font-size: 14px;
@@ -413,10 +496,20 @@ h1 {
     font-family: "PTSans", "Arial", sans-serif;
     color: #000;
     text-transform: uppercase;
+    margin-right: 10px;
 }
 .search input[type="text"] {
     width: 345px;
-    height: 40px;
+    height: 38px;
+    border: none;
+    background-color: #f2f2f2;
+}
+.search input:hover {
+    background-color: #ebebeb;
+}
+.search input:active {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
 }
 .select {
     display: flex;
@@ -440,6 +533,18 @@ h1 {
     text-align: center;
     padding-top: 9px;
 }
+.select a:hover {
+    color: #000;
+}
+.select a:focus {
+    color: #81b3d2;
+}
+.block-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 457px;
+}
 .search .btn {
     width: 465px;
     height: 60px;
@@ -448,6 +553,7 @@ h1 {
     border: none;
     font-size: 21px;
     line-height: 26px;
+    text-transform: uppercase;
 }
 .filter {
     display: flex;

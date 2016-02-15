@@ -99,20 +99,22 @@
       <a class="interest-search" href="#">поиск гостиницы в седоне</a>
       <form class="search">
         <div class="search-block">
-          <label for="data">Дата              заезда:<input type="text" id="data"></label> 
-          <label for="datas">Дата выезда: <input type="text" id="datas" required></label> 
+          <label for="data"> Дата              заезда:<input class="sprite-calendar" type="text" id="data"></label> 
+          <label  for="datas"> Дата выезда: <input class="sprite-calendar" type="text" id="datas" required></label> 
+            <div class="block-select">
           <label for="grown">взрослые:</label>
           <div class="select">
-            <a><span class="icon-minus">&#xe901;</span></a>
+            <a><span class="icon-minus"></span></a>
             <input type="text" id="grown">
-            <a><span class="icon-plus">&#xe900;</span></a>
+            <a><span class="icon-plus"></span></a>
            </div>
            <label for="child">дети:</label>
            <div class="select">
-            <a><span class="icon-minus">&#xe901;</span></a>
+            <a><span class="icon-minus"></span></a>
             <input type="text" id="child">
-            <a><span class="icon-plus">&#xe900;</span></a>
+            <a><span class="icon-plus"></span></a>
            </div>
+                </div>
            <button class="btn">найти</button>
         </div>
       </form>
@@ -127,9 +129,9 @@
         <p>#visitsedona</p>
       </section>
       <section class="footer-social">
-        <a class="social-btn social-btn-tv" href="#"></a>
-        <a class="social-btn social-btn-fb" href="#"></a>
-        <a class="social-btn social-btn-yt" href="#"></a>
+        <a class="social-btn sprite-t-icons" href="#"></a>
+        <a class="social-btn sprite-fb-icons" href="#"></a>
+        <a class="social-btn sprite-you-icons" href="#"></a>
       </section>
       <section class="footer-copyright">
         <p>website by</p>
@@ -137,5 +139,15 @@
       </section>
     </footer>
   </div>
+  <script>
+    var link = document
+      .querySelector(".interest-search");
+    var popup = document(".search");
+      .querySelector(".
+    link.addEventListener("click", function(event) {
+       event.preventDefault(); 
+       popup.classList.add("search-show");
+    });
+  </script>    
 </body>
 </html>
