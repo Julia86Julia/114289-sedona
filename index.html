@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic">
+   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -140,14 +140,18 @@
     </footer>
   </div>
   <script>
-    var link = document
-      .querySelector(".interest-search");
-    var popup = document(".search");
-      .querySelector(".
-    link.addEventListener("click", function(event) {
-       event.preventDefault(); 
-       popup.classList.add("search-show");
-    });
+   var link = document.querySelector(".interest-search");
+	var popup = document.querySelector(".search");
+	var show = document.querySelector(".search-show");
+
+	link.addEventListener("click", function(event) {
+		event.preventDefault();
+		if (popup.classList.contains("search-show")) {
+			popup.classList.remove("search-show");
+		} else {
+			popup.classList.add("search-show");
+		}
+	});
   </script>    
 </body>
 </html>
