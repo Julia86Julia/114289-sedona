@@ -58,6 +58,7 @@ body {
     flex:auto;
     max-width: 1200px;
     min-width: 768px;
+    box-shadow: 0 0 25px #dbdbdb;
 }
     
 .main-header {
@@ -103,10 +104,12 @@ a:hover {
 .logo {
     align-items: flex-start;
     align-self: center;
+    text-decoration: none;
+     z-index: 99;
 }
 .logo img {
     background: url("img/index/logo.png");
-    z-index: 98;
+    margin-top: 23px;
 }
 main {
     width: 100%;
@@ -129,6 +132,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    z-index: 1;
 }   
 .back img {
     margin-left: auto;
@@ -429,7 +433,15 @@ h1 {
     background: #fff;
     position: absolute;
     left: calc(50% - 284px);
+     animation-name:search; 
+animation-duration:1.5s;
+animation-timing-function:ease-out;
+animation-fill-mode:forwards;  
+
   }
+@keyframes search {
+    from {transform: translate(0px, -1000px);}
+}
 .search-show {
     display: block;
 }
