@@ -87,9 +87,6 @@ body {
     justify-content: center;
     align-items:center; 
 }
-.menu a {
-    width: 150px; 
-}
 a {
     text-decoration: none;
     color: #000;
@@ -104,9 +101,7 @@ a:hover {
 logo {
     align-items: flex-start;
     align-self: center;
-    text-decoration: none;
-    
-     
+    text-decoration: none;   
 }
 .logo img {
     background: url("img/index/logo.png");
@@ -189,11 +184,11 @@ p {
     height: 256px;
     box-sizing: content-box;
     flex-grow: 1;
+    background-color: #81b3d2;
 }
 .photo-content-left {
     width: 33.34%;
     max-height: 256px;
-    background-color: #81b3d2;
     display: flex;
     flex-direction: column;   
     justify-content: center;
@@ -207,7 +202,7 @@ p {
     text-align: center;
 }
 .nomber {
-    margin-top: 30px;
+    margin-bottom: 0px;
     color: #fff;
     text-align: center;
 }
@@ -230,7 +225,6 @@ p {
     right: -30px;
 }
 .photo-text-p {
-    margin-top: 30px;
     color: #fff;
     text-align: center;
     margin-bottom: 55px;
@@ -240,6 +234,10 @@ p {
     height: 256px;
     display: flex;
     flex-direction: column;
+}
+.photo-photos-left img,
+.photo-photos-right img {
+    margin-top: 0;
 }
 .photo-content-right {
     width: 33.34%;
@@ -256,7 +254,12 @@ p {
     height: 256px;
 }
 .icons {
-    display: flex;
+   display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 330px;
+    box-sizing: content-box;
 }
 .icons-item {
     width: 33.3%;
@@ -267,27 +270,45 @@ p {
     align-items: center;
     align-self: center;
 }
+.icons-item img {
+    margin-top: 60px;
+}
+.icons-item b {
+    margin-top: 30px;
+}
 .icons-item p {
    text-align: center;
+    margin-bottom: 86px;
+    margin-top: 30px;
 }
 .description {
     display: flex;
     justify-content: center;
     background-color: #eee;
+    width: 100%;
+    height: 255px;
 }
 .description-text {
-    width: 100%;
-    height: 260px;
+    width: 33.34%;
+    height: 256px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-self: center;
+    box-sizing: content-box;
 }
 .description-text b {
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
 }
-.description-text p {
+.numbers {
     text-align: center;
+    margin-bottom: 0px;
+}
+.description-content {
+    text-align: center;
+    margin-bottom: 65px;
 }
 .numbers::after {
     content: '';
@@ -463,7 +484,7 @@ animation-fill-mode:forwards;
     background-color: #c2c2c2;
     width: 21px;
     height: 22px;
-    background-position: 310px 0px;
+    background-position: 320px 0px;
 }
 .sprite-calendar:hover { 
     background-color: #000;
@@ -482,6 +503,7 @@ animation-fill-mode:forwards;
     height: 38px;
     border: none;
     background-color: #f2f2f2;
+    padding-left: 15px;
 }
 .search input:hover {
     background-color: #ebebeb;
@@ -505,6 +527,7 @@ animation-fill-mode:forwards;
     height: 36px;
     background-color: #f2f2f2;
     border: none;
+    text-align: center;
 }
 .select a {
     display: block;
