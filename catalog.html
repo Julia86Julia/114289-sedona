@@ -32,18 +32,18 @@
       <form class="filter">
         <div class="check">
           <p>инфраструктура:</p>
-          <label class="icon-check-on" for="infra"> <input type="checkbox" id="infra"> бассейн  </label>
+          <label class="icon-check-on" for="infra"> <input type="checkbox" id="infra">бассейн </label>
           <label class="icon-check-off" for="parking"> <input type="checkbox" id="parking"> парковка</label>
           <label class="icon-check-off" for="wifi"> <input type="checkbox" id="wifi"> WI-FI</label>
         </div>
         <div class="type">
           <p>тип жилья:</p>
-          <input type="checkbox" name="hotel">
-          <label class="icon-check-on" for="hotel">Гостиница</label>
-          <input type="checkbox" name="motel">
-          <label class="icon-check-on" for="motel">Мотель</label>
-          <input type="checkbox" name="apart">
-          <label class="icon-check-on" for="apart">апартаменты</label>
+         
+          <label class="icon-check-on" for="hotel"> <input type="checkbox" name="hotel">Гостиница</label>
+          
+          <label class="icon-check-on" for="motel"><input type="checkbox" name="motel">Мотель</label>
+          <label class="icon-check-on" for="apart">           <input type="checkbox" name="apart">
+апартаменты</label>
         </div>
         <div class="filter-range">
           <p>стоимость в сутки (р):</p>
@@ -62,13 +62,17 @@
         </div>
       </form>
       <section class="found">
+          <div class="found-block">
         <h2> Найдено:3</h2>
         <p class="found-sorting">сортировка:</p>
         <a class="active" href="#">по цене</a>
         <a class="sort" href="#">по типу</a>
         <a class="sort" href="#">по рейтингу</a>  
+              </div>
+          <div class="arrow">
         <a class="arrow icon-up-dir" href="#"></a>
         <a class="arrow icon-down-dir" href="#"></a>
+              </div>
       </section>
       <section class="hotels">  
         <div class="amara">
@@ -91,13 +95,13 @@
             <img src="img/desert.jpg" width="135" height="90">
           </div>
           <div class="resort">  
-            <h2>desert quail inn</h2>
+            <h2 style="margin-left: -125px;">desert quail inn</h2>
             <p class="spa">мотель<span>от 2000 р.</span></p>
             <a class="details">подробнее</a>
             <a class="reserve">забронировать</a>  
           </div> 
           <div class="stars">
-            <p class="star"><img src="img/sprite/stars.png"></p>
+            <p class="star" style="margin-left: 65px;"><img src="img/sprite/stars.png"></p>
             <p class="rating">рейтинг:8,9</p>
           </div>
          </div>
@@ -106,13 +110,13 @@
             <img src="img/villas.jpg" width="135" height="90">
           </div>
           <div class="resort">  
-            <h2>villas at poco diablo</h2>
+            <h2 style="margin-left: -65px;">villas at poco diablo</h2>
             <p class="spa">апартаменты<span>от 4000 р.</span></p>
             <a class="details">подробнее</a>
             <a class="reserve">забронировать</a>  
           </div> 
           <div class="stars">
-            <p class="star"><img src="img/sprite/sta.png"></p>
+            <p class="star" style="margin-left: 45px;"><img src="img/sprite/sta.png"></p>
             <p class="rating">рейтинг:9,2</p>
           </div>
         </div>
