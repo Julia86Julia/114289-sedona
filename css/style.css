@@ -242,7 +242,6 @@ p {
 .photo-content-right {
     width: 33.34%;
     max-height: 256px;
-    background-color: #81b3d2;
     display: flex;
     flex-direction: column;   
     justify-content: center;
@@ -400,7 +399,7 @@ p {
     text-align: center;
 }
 .footer-copyright {
-    width: 200px; 
+    width: 25%; 
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -757,7 +756,7 @@ animation-fill-mode:forwards;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 55%;
+    width: 76%;
     height: 30px;
     margin: 0px;
 }
@@ -800,9 +799,11 @@ animation-fill-mode:forwards;
 .arrow {
     display: flex;
     font-size: 23px;
+    width: 5%;
+    margin-left: 40px;
 }
 .arrow .icon-up-dir {
-    margin-left: 385px;
+/*    margin-left: 385px;*/
     color: #ccc;
 }
 .icon-down-dir {
@@ -833,20 +834,26 @@ animation-fill-mode:forwards;
 }
 .amara .prev {
     margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 83%;
+    height: 93px;
 }
-.resort {
-/*    margin-top: 0;*/
+.prev h2 {
+    margin-top: -94px;
+    margin-left: 165px;
+    margin-bottom: -11px;
+}
+.spa {
+    margin-left: 165px;
+}
 /*
-    margin-bottom: 150px;
-    margin-left:30px;
-*/
-    height: 90px;
-    width: 30%;
-}
 .spa span {
     padding-left: 40px;
 }
-.resort a {
+*/
+.prev a {
     display: inline-block;
     color: #fff;
     text-decoration: none;
@@ -855,33 +862,47 @@ animation-fill-mode:forwards;
     height: 28px;
     text-align: center;
     cursor: default;
+    margin-left: 165px;
 }
+/*
 .resort h2 {
     margin: -5px -15px -15px -85px;
 }
-.resort h2:hover {
+*/
+.prev h2:hover {
     color: #81b3d2;
     cursor: pointer;
 }
+/*
 .resort .spa {
     margin-left: 30px;
     margin-bottom: 10px;
 }
+*/
 .spa span {
     padding-left: 30px;
 }
+/*
 .resort .details {
     margin-left: 30px;
 }
-.resort .reserve {
+*/
+.prev .reserve {
     background: #766357;
     width: 142px;
+    margin-left: 282px;
+    margin-top: -26px;
 }
 .stars {
-    margin-left: 500px;
+    margin-left: -22px;
+    width: 15%;
+    height: 93px;
 }
 .star {
-    margin-left: 20px;
+    margin-left: 17px;
+    margin-bottom: 40px;
+    margin-top: 0px;
+    display: block;
 }
 .rating {
     display: block;
@@ -890,6 +911,7 @@ animation-fill-mode:forwards;
     width: 110px;
     height: 28px;
     text-align: center;
+    margin-left: -1px;
 }
 .details:hover {
     background: #669ec0;
