@@ -101,10 +101,11 @@ a {
 a:hover {
     color: #81b3d2;
 }
-logo {
+.logo {
     align-items: flex-start;
     align-self: center;
     text-decoration: none;   
+    margin-left: -12px;
 }
 .logo img {
     background: url("img/index/logo.png");
