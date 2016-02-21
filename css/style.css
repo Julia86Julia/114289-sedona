@@ -51,6 +51,9 @@ body {
 .icon-minus::before { content: "\e802"; } /* "" */
 .icon-youtube::before { content: "\f39e"; } /* "" */
 
+.social-btn:hover  {
+    background: #669ec0
+}
 .block {
     margin: auto;
     display:flex;
@@ -389,17 +392,21 @@ p {
 }
 .footer-social {
     width: 20%;
+    text-align: center;
 }
 .social-btn  {
     display: inline-flex;
     color: #fff;
-    background: #81b3d2 url("../img/sprite/icons.png");
+    background: #81b3d2 url("../img/sprite/icons.png") no-repeat center;
     width: 46px;
-    height: 48px;
+    height: 46px;
     text-align: center;
 }
+.social-btn:hover {
+     background: #669ec0 url("../img/sprite/icons.png") no-repeat center;
+}
 .footer-copyright {
-    width: 25%; 
+    width: 20%; 
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -411,29 +418,37 @@ p {
     line-height: 26px; 
 }
 .sprite {
-    background-image: url("../img/sprite/icons.png");
+    background-image: url(../img/sprite/icons.png);
     background-repeat: no-repeat;
     display: block;
 }
+
 .sprite-calendar {
     width: 21px;
     height: 22px;
     background-position: -8px -8px;
 }
+
 .sprite-fb-icons {
-    width: 46px;
-    height: 48px;
-    background-position: -45px -8px;
+    background-position: -28px 6px; 
+}
+.sprite-fb-icons:hover {
+    background-position: -28px 6px;
+/*    color: #fff;*/
 }
 .sprite-t-icons {
-    width: 46px;
-    height: 48px;
-    background-position: -107px -8px;
+
+    background-position: -57px 8px;
+}
+.sprite-t-icons:hover {
+     background-position: -57px 8px;
 }
 .sprite-you-icons {
-    width: 46px;
-    height: 48px;
-    background-position: -8px -72px;
+   
+    background-position: -59px -24px;
+}
+.sprite-you-icons:hover {
+     background-position: -59px -24px;
 }
 h1 {
     font-family:"Myriad Pro";
