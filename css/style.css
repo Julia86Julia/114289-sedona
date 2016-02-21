@@ -773,7 +773,6 @@ animation-fill-mode:forwards;
     align-items: center;
     width: 76%;
     height: 30px;
-    margin: 0px;
 }
 .found h2 {
     font-weight: bold;
@@ -815,7 +814,7 @@ animation-fill-mode:forwards;
     display: flex;
     font-size: 23px;
     width: 5%;
-    margin-left: 40px;
+    margin-right: -107px;
 }
 .arrow .icon-up-dir {
 /*    margin-left: 385px;*/
@@ -848,11 +847,11 @@ animation-fill-mode:forwards;
     border-bottom: 1px solid #e5e5e5;  
 }
 .amara .prev {
-    margin-left: 30px;
+    margin-left: 64px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 83%;
+    width: 80%;
     height: 93px;
 }
 .prev h2 {
@@ -909,7 +908,7 @@ animation-fill-mode:forwards;
     margin-top: -26px;
 }
 .stars {
-    margin-left: -22px;
+    margin-left: -5px;
     width: 15%;
     height: 93px;
 }
