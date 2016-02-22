@@ -192,12 +192,13 @@ p {
 }
 .photo-content-left {
     width: 33.34%;
-    max-height: 256px;
+    height: 256px;
     display: flex;
     flex-direction: column;   
     justify-content: center;
     align-self: center;
     box-sizing: content-box;
+    background: #81b3d2;
 }
 .photo-text {
     color: #fff;
@@ -245,12 +246,13 @@ p {
 }
 .photo-content-right {
     width: 33.34%;
-    max-height: 256px;
+    height: 256px;
     display: flex;
     flex-direction: column;   
     justify-content: center;
     align-self: center;
     box-sizing: content-box;
+    background: #81b3d2;
 }
 .photo-photos-right {
     width: 66.66%;
@@ -598,14 +600,13 @@ animation-fill-mode:forwards;
     background: #fff url("../img/filter.jpg") no-repeat;
 }
 .check {
-    width: 20%;
     height: 157px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;  
     margin-top: 28px;
-    margin-left: -53px;
+    margin-left: -47px;
     margin-right: 23px;
 }
 
@@ -648,7 +649,7 @@ animation-fill-mode:forwards;
     align-items: flex-start;
     height: 157px;
     margin-top: 30px;
-    margin-left: -127px;
+    margin-left: -26px;
 }
 .type p {
     margin-left: 5px;
