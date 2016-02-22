@@ -454,7 +454,7 @@ p {
      background-position: -59px -24px;
 }
 h1 {
-    font-family:"Myriad Pro";
+    font-family: "Myriad Pro", "Arial", sans-serif;
     line-height:26px;
     color:#000;
     font-size:21px;
