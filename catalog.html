@@ -32,9 +32,12 @@
       <form class="filter">
         <div class="check">
           <p>инфраструктура:</p>
-          <label class="icon-check-on" for="infra"> <input type="checkbox" id="infra">бассейн </label>
+            
+          <label class="icon-check-on" for="infra"> бассейн </label>
+            <input type="checkbox" id="infra">
           <label class="icon-check-off" for="parking"> <input type="checkbox" id="parking"> парковка</label>
           <label class="icon-check-off" for="wifi"> <input type="checkbox" id="wifi"> WI-FI</label>
+                
         </div>
         <div class="type">
           <p>тип жилья:</p>
@@ -44,6 +47,7 @@
           <label class="icon-check-on" for="motel"><input type="checkbox" id="motel">Мотель</label>
           <label class="icon-check-on" for="apart">           <input type="checkbox" id="apart">
 апартаменты</label>
+            
         </div>
         <div class="filter-range">
           <p>стоимость в сутки (р):</p>
@@ -95,13 +99,13 @@
             <img src="img/desert.jpg" width="135" height="90" alt="img">
          
           
-            <h2>desert quail inn</h2>
-            <p class="spa">мотель<span>от 2000 р.</span></p>
+            <h2 class="desert">desert quail inn</h2>
+            <p class="spa motel">мотель<span>от 2000 р.</span></p>
             <a href="catalog.html" class="details">подробнее</a>
             <a href="catalog.html" class="reserve">забронировать</a>  
           </div> 
           <div class="stars">
-            <p class="star" style="margin-left: 65px"><img src="img/sprite/stars.png" alt="star"></p>
+            <p class="star" style="margin-left: -41px"><img src="img/sprite/stars.png" alt="star"></p>
             <p class="rating">рейтинг:8,9</p>
           </div>
          </div>
@@ -109,13 +113,13 @@
           <div class="prev">
             <img src="img/villas.jpg" width="135" height="90" alt="img">
            
-            <h2>villas at poco diablo</h2>
-            <p class="spa">апартаменты<span>от 4000 р.</span></p>
+            <h2 class="villas">villas at poco diablo</h2>
+            <p class="spa appart">апартаменты<span>от 4000 р.</span></p>
             <a href="catalog.html" class="details">подробнее</a>
             <a href="catalog.html" class="reserve">забронировать</a>  
           </div> 
           <div class="stars">
-            <p class="star" style="margin-left: 40px;"><img src="img/sprite/sta.png" alt="star"></p>
+            <p class="star" style="margin-left: -66px;"><img src="img/sprite/sta.png" alt="star"></p>
             <p class="rating">рейтинг:9,2</p>
           </div>
         </div>
@@ -136,5 +140,12 @@
       </section>
     </footer>
   </div>
+    <script>
+    var b = document.documentElement;
+b.setAttribute('data-useragent',  navigator.userAgent);
+b.setAttribute('data-platform', navigator.platform );
+
+// IE 10 == Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)
+        </script>
 </body>
 </html>
